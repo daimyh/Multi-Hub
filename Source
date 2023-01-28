@@ -56,3 +56,13 @@ local TradescamButton = PsxTab:CreateButton({
      loadstring(game:HttpGet("https://raw.githubusercontent.com/Shmoly/fuck-psx/main/PsxCatLoadingScript.lua"))()
     end,
  })
+
+ -- admin
+ local AdminTab = Window:CreateTab("Admin", 11347112419)
+ local AdminSection = AdminTab:CreateSection("scripts")
+ local InfinityYield = AdminTab:CreateButton({
+    Name = "Infinit Yield Script",
+    Callback = function()
+     loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    end,
+ })
