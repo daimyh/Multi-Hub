@@ -44,9 +44,9 @@ Rayfield:Notify({
 -- psx
 local PsxTab = Window:CreateTab("Pet Simulator X", 11347112419) -- Title, Image
 local PsxSection = PsxTab:CreateSection("Scripts")
-local Button = PsxTab:CreateButton({
-   Name = "Button Example",
+local JmesButton = PsxTab:CreateButton({
+   Name = "Jmes Script",
    Callback = function()
-   -- The function that takes place when the button is pressed
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/jmesfo0/RobloxScripts/main/psx-jmes.lua"))()
    end,
 })
