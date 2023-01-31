@@ -40,6 +40,20 @@ Rayfield:Notify({
    },
 },
 })
+Rayfield:Notify({
+   Title = "Credits",
+   Content = "Made By: Daimy and Simon",
+   Duration = 6.5,
+   Image = 4483362458,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Cool!",
+         Callback = function()
+         print("thx")
+      end
+   },
+},
+})
 
 -- psx
 local PsxTab = Window:CreateTab("Pet Simulator X", 11347112419) -- Title, Image
