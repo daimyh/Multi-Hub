@@ -11,7 +11,7 @@ local Window = Rayfield:CreateWindow({
 	},
         Discord = {
         	Enabled = true,
-        	Invite = "9haMu9YWsT", -- The Discord invite code, do not include discord.gg/
+        	Invite = "953sQhtZ", -- The Discord invite code, do not include discord.gg/
         	RememberJoins = false -- Set this to false to make them join the discord every time they load it up
         },
 	KeySystem = true, -- Set this to true to use our key system
@@ -27,8 +27,8 @@ local Window = Rayfield:CreateWindow({
 })
 
 Rayfield:Notify({
-   Title = "Note!",
-   Content = "Not all of these scripts where made by us. all where tested and are safe and working",
+   Title = "1/31/2023",
+   Content = "Last update: added hubs tab! + 3 hubs",
    Duration = 6.5,
    Image = 4483362458,
    Actions = { -- Notification Buttons
@@ -65,4 +65,26 @@ local TradescamButton = PsxTab:CreateButton({
     Callback = function()
      loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
     end,
+ })
+
+  -- other hubs
+ local HubTab = Window:CreateTab("Hubs", 11347112419)
+ local HubSection = HubTab:CreateSection("Other roblox hubs")
+ local VGhub = HubTab:CreateButton({
+     Name = "VG hub",
+     Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+     end,
+ })
+ local OwlHub = HubTab:CreateButton({
+     Name = "Owl hub",
+     Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))()
+     end,
+ })
+ local UnfairHub = HubTab:CreateButton({
+     Name = "unfair hub",
+     Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua'))()
+     end,
  })
