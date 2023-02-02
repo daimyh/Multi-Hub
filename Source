@@ -25,88 +25,17 @@ local Window = Rayfield:CreateWindow({
 		Key = "Beta"
 	}
 })
-
 Rayfield:Notify({
-   Title = "1/31/2023",
-   Content = "Added hubs tab, and 3 hubs. added doors tab and OP doors scirpt",
+   Title = "Click To Load",
+   Content = "Click "Load" to load the hub",
    Duration = 6.5,
    Image = 4483362458,
    Actions = { -- Notification Buttons
       Ignore = {
-         Name = "Okay!",
+         Name = "Load",
          Callback = function()
-         print("hi")
+         loadstring(game:HttpGet('https://raw.githubusercontent.com/daimyh/MultiHub-Checker/main/Checker'))()
       end
    },
 },
 })
-Rayfield:Notify({
-   Title = "Credits",
-   Content = "Made By: Daimy and Simon",
-   Duration = 6.5,
-   Image = 4483362458,
-   Actions = { -- Notification Buttons
-      Ignore = {
-         Name = "Cool!",
-         Callback = function()
-         print("thx")
-      end
-   },
-},
-})
-
--- psx
-local PsxTab = Window:CreateTab("Pet Simulator X", 11347112419) -- Title, Image
-local PsxSection = PsxTab:CreateSection("Scripts")
-local JmesButton = PsxTab:CreateButton({
-   Name = "Jmes Script",
-   Callback = function()
-    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/jmesfo0/RobloxScripts/main/psx-jmes.lua"))()
-   end,
-})
-local TradescamButton = PsxTab:CreateButton({
-    Name = "Trade Scam Script",
-    Callback = function()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/Shmoly/fuck-psx/main/PsxCatLoadingScript.lua"))()
-    end,
- })
-
- -- admin
- local AdminTab = Window:CreateTab("Admin", 11347112419)
- local AdminSection = AdminTab:CreateSection("scripts")
- local InfinityYield = AdminTab:CreateButton({
-    Name = "Infinit Yield Script",
-    Callback = function()
-     loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-    end,
- })
-
-  -- other hubs
- local HubTab = Window:CreateTab("Hubs", 11347112419)
- local HubSection = HubTab:CreateSection("Other roblox hubs")
- local VGhub = HubTab:CreateButton({
-     Name = "VG hub",
-     Callback = function()
-      loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
-     end,
- })
- local OwlHub = HubTab:CreateButton({
-     Name = "Owl hub",
-     Callback = function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))()
-     end,
- })
- local UnfairHub = HubTab:CreateButton({
-     Name = "unfair hub",
-     Callback = function()
-      loadstring(game:HttpGet('https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua'))()
-     end,
- })
- local DoorsTab = Window:CreateTab("Doors", 11347112419)
- local HubSection = DoorsTab:CreateSection("Scripts")
- local OPdoors = DoorsTab:CreateButton({
-     Name = "OP doors script",
-     Callback = function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Doors"))()
-     end,
- })
