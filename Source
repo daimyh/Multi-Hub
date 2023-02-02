@@ -27,15 +27,15 @@ local Window = Rayfield:CreateWindow({
 })
 Rayfield:Notify({
    Title = "Click To Load",
-   Content = "Click "Load" to load the hub",
-   Duration = 6.5,
+   Content = "Click the button Load to load the hub",
+   Duration = 25,
    Image = 4483362458,
    Actions = { -- Notification Buttons
       Ignore = {
          Name = "Load",
          Callback = function()
-         loadstring(game:HttpGet('https://raw.githubusercontent.com/daimyh/MultiHub-Checker/main/Checker'))()
+         	loadstring(game:HttpGet('https://raw.githubusercontent.com/daimyh/MultiHub-Checker/main/Checker'))()
       end
    },
-},
+   }
 })
