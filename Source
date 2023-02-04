@@ -39,3 +39,12 @@ Rayfield:Notify({
    },
    }
 })
+
+local Tab = Window:CreateTab("Loader", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("Click Load to Load")
+local Button = Tab:CreateButton({
+   Name = "Load!",
+   Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/daimyh/MultiHub-Checker/main/Checker'))()
+   end,
+})
